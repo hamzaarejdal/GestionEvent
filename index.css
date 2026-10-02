@@ -453,3 +453,43 @@ color: #9ca3af;
 
 
 }
+
+.event-filters {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.event-filters input,
+.event-filters select {
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+}
+
+.event-filters input {
+    flex: 1;
+}
+
+.event-filters select {
+    width: 220px;
+    background: white;
+}
+
+.event-filters input:focus,
+.event-filters select:focus {
+    border-color: #4f46e5;
+}
+
+@media (max-width: 600px) {
+    .event-filters {
+        flex-direction: column;
+    }
+
+    .event-filters select {
+        width: 100%;
+    }
+}
